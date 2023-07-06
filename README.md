@@ -1,3 +1,3 @@
 # Pygame-Platformer
 
-ist eine Python Projekt, dass mit Hilfe der Bibliothek "Pygame" ein Dokument ausliest und aus der Symbolmappe eine Tilemap bildet, welche das betretbare Level darstellt.
+ist ein auf der PyGame-Library basierender 2D-Platformer, an dem sich Python-Neulinge ausprobieren können.
