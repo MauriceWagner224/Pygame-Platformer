@@ -1,16 +1,24 @@
+import pygame
+
 from properties import *
 
-# parent class with basic params that are in common with it's child
+# parent class with basic params that are in common with it's children
 class UserInterface():
 	def __init__(self, screen):
 		self.screen = screen
 
 	def initButtons(self):
 		# create buttons
-		self.restart_button = Button(self.screen, screen_width // 2 - 50, screen_height // 2 + 100, restart_img)
+		self.restart_button = Button(self.screen, screen_width // 2 - 150, screen_height // 2, restart_img)
 		self.start_button = Button(self.screen, screen_width // 2 - 350, screen_height // 2, start_img)
-		self.exit_button = Button(self.screen, screen_width // 2 + 100, screen_height // 2, exit_img)
+		self.exit_button = Button(self.screen, screen_width // 2 + 100, screen_height // 2, exit_btn)
 		self.resume_button = Button(self.screen, screen_width // 2, screen_height // 2, load_img)
+
+	def drawText(self, text, screen, width, height):
+		self.text = font.render(str(text), True, (10, 10, 10))
+		self.width = self.text.get_width() + width
+		self.height = self.text.get_height() + height
+		screen.blit(self.text, (self.width, self.height))
 
 
 class Button(object):
@@ -30,7 +38,7 @@ class Button(object):
 		# get mouse position
 		pos = pygame.mouse.get_pos()
 
-		# check mouseover and clicked conditions
+		# when the button is drawn, check if button is clicked and return both cases
 		if self.rect.collidepoint(pos):
 			if pygame.mouse.get_pressed()[0]:
 				self.action = True
@@ -41,3 +49,7 @@ class Button(object):
 		self.screen.blit(self.image, self.rect)
 
 		return self.action
+
+
+
+
