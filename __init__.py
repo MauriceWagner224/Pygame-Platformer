@@ -1,4 +1,13 @@
-from platformer import Game
+from platformer import GameLoop
+from worlds import world1, world2
 
-g = Game()
-g.start()
+class StartGame(object):
+    def __init__(self):
+        game = GameLoop()
+        game.start(world1.world_data)
+
+
+g = StartGame()
+
+
+
