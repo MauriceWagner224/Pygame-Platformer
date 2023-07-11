@@ -63,10 +63,6 @@ class Player(pygame.sprite.Sprite):
          y-movement of the player stays unchanged (the player is technically falling, the y-movement gets reset in the next loop)
          the collision is handles using colliderect sometimes with parameters besides colliding object, to specify the recttangle-borders colliding"""
         self.in_air = True
-        for plat in self.gameAttr.platform_group:
-            if plat.rect.colliderect(self.rect.x, self.rect.y, self.width, self.height):
-                if self.vel.y >= 0:
-                    self.dx += plat.move_dir
         for tile in self.gameAttr.tile_list:
             # check for collision in x direction, revert x-displacement when colliding
             if tile.rect.colliderect(self.rect.x + self.dx, self.rect.y, self.width, self.height):
@@ -101,6 +97,9 @@ class Player(pygame.sprite.Sprite):
             if self.rect.colliderect(coin.rect):
                 self.gameAttr.coins += 1
                 coin.kill()
+        for plat in self.gameAttr.platform_group:
+            if plat.rect.colliderect(self.rect.left, self.rect.top + self.dy + 5, self.width, self.height):
+                self.dx += plat.move_dir
 
     """ function for keyinput handling and player movement + animation """
     def movement(self):
