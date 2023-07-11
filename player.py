@@ -3,6 +3,7 @@ from sprites import Missile
 from properties import *
 
 
+""" Playerclass contains the handling of the Playersprite and collision/interaction with other sprites, Playermotion, movement etc."""
 class Player(pygame.sprite.Sprite):
     def __init__(self, x, y, gameAttr):
         pygame.sprite.Sprite.__init__(self)
@@ -36,6 +37,8 @@ class Player(pygame.sprite.Sprite):
         self.rect.x = x
         self.rect.y = y
 
+
+    """ update function called by Gameclass-update"""
     def update(self):
         self.dx = 0
         self.dy = 0
@@ -45,7 +48,7 @@ class Player(pygame.sprite.Sprite):
         self.gravity()
         self.animate()
         self.collision()
-        # update player coordinates
+        # update player coordinates, after collision may've reversed changes in position
         self.rect.x += self.dx
         self.rect.y += self.dy
         # draw player onto screen
@@ -55,14 +58,13 @@ class Player(pygame.sprite.Sprite):
 
 
     def collision(self):
-
-
         """ first loop through moving platforms, when playerpos + y-movement collides with platform:
          add directional platform-movement to the x-movement of the player
-         y-movement of the player stays unchanged (the player is technically falling, the y-movement gets reset in the next loop) """
+         y-movement of the player stays unchanged (the player is technically falling, the y-movement gets reset in the next loop)
+         the collision is handles using colliderect sometimes with parameters besides colliding object, to specify the recttangle-borders colliding"""
         self.in_air = True
         for plat in self.gameAttr.platform_group:
-            if plat.rect.colliderect(self.rect.x, self.rect.y + self.dy, self.width, self.height):
+            if plat.rect.colliderect(self.rect.x, self.rect.y, self.width, self.height):
                 if self.vel.y >= 0:
                     self.dx += plat.move_dir
         for tile in self.gameAttr.tile_list:
@@ -70,7 +72,9 @@ class Player(pygame.sprite.Sprite):
             if tile.rect.colliderect(self.rect.x + self.dx, self.rect.y, self.width, self.height):
                 self.dx = 0
             # check for collision in y direction
-            if tile.rect.colliderect(self.rect.x, self.rect.y + self.dy, self.width, self.height):
+            #pygame.rect.Rect.colliderect()
+            #if tile.rect.colliderect(self.rect.x, self.rect.y + self.dy, self.width, self.height):
+            if tile.rect.colliderect(self.rect.left, self.rect.top + self.dy, self.width, self.height):
                 # check if below the ground for example, jumping while under a block
                 if self.vel.y < 0:
                     self.dy = tile.rect.bottom - self.rect.top
@@ -80,19 +84,18 @@ class Player(pygame.sprite.Sprite):
                     self.dy = tile.rect.top - self.rect.bottom
                     self.vel.y = 0
                     self.in_air = False
-        for enemy in self.gameAttr.enemy_sprites:
+        for enemy in self.gameAttr.enemy_sprites: # the players dies when an enemy collides with him
             if self.rect.colliderect(enemy.rect):
                 self.isdead = True
             # kill the enemy and sprite, when collide
-            for missile in self.gameAttr.missile_sprites:
+            for missile in self.gameAttr.missile_sprites: # the enemy dies, should it collide with a missile(which is also killed)
                 if missile.rect.colliderect(enemy):
                     missile.kill()
                     enemy.kill()
-        # when exit is reached, count up on the worldstage-var
-        # Reset and Load world
         for tile in self.gameAttr.ExitsGroup:
             if tile.rect.colliderect(self):
-                self.gameAttr.nextWorld()
+                self.gameAttr.previousCoins = self.coins
+                self.gameAttr.nextWorld()  # the world is reset and the next one loaded
         for coin in self.gameAttr.CoinGroup:
             self.coins = abs(self.gameAttr.coins)
             if self.rect.colliderect(coin.rect):
@@ -103,7 +106,7 @@ class Player(pygame.sprite.Sprite):
     def movement(self):
         key = pygame.key.get_pressed()
         if key[pygame.K_SPACE] and self.jumped == False and self.in_air == False:
-            self.vel.y = -16
+            self.vel.y = -14 #-16
             self.jumped = True
         if not key[pygame.K_SPACE]:
             self.jumped = False
@@ -122,22 +125,25 @@ class Player(pygame.sprite.Sprite):
         if key[pygame.K_TAB]:
             self.ptick.append(pygame.time.get_ticks())
             for tick in self.ptick:
-                if tick >= self.ptick[0] + 100:
+                if tick >= self.ptick[0] + 100: # every 100ticks, spawn a new missile
                     self.pew = Missile(self.rect.x, self.rect.y, missile_img, self.direction)
                     self.gameAttr.all_sprites.add(self.pew)
                     self.gameAttr.missile_sprites.add(self.pew)
                     self.ptick.clear()
 
+    """gravity simply adds consistent y-movement, to make the player fall. Not pretty, but convenient"""
     def gravity(self):
-        # gravity by adding consistent y-movement instead of potentiating the velocity by acceleration
-        self.vel.y += 1.2
+
+        if self.in_air == True:
+            self.vel.y += 1.2
+
         if self.vel.y > 18:
            self.vel.y = 18
         self.dy += self.vel.y
 
     # walkcycle animation looping through the sprites
     def animate(self, walking = None):
-        if self.counter > self.walk_cooldown:
+        if self.counter > self.walk_cooldown: # spacing out the animationcycle
             self.counter = 0
             self.index += 1
             if self.index >= len(self.images_right):
@@ -157,7 +163,7 @@ class Player(pygame.sprite.Sprite):
 
 
     """ loading sprites in loop, setup for player-rect and img
-      for each iteration, animation-sprite and index  are loaded"""
+      for each iteration, animation-sprite and index are loaded, stored in self.images_l/r"""
     def loadAnimationSprites(self):
         for num in range(1, 5):
             img_right = pygame.image.load(f'img/guy{num}.png')
