@@ -5,7 +5,8 @@ The goal of this project is to educate beginners on how to use python and struct
 Pygame is a necessary library used widely throughout the project and it's documentation can be found here:
 
 ## Instructions on how to start working on the project.
-All Links
+All Links can be found below
+
 ## First Step:
 Installing Pycharm Edu is pretty straightforward and can be installed without admin-privileges by denying admin-authentification after starting the installer.
 
@@ -70,6 +71,21 @@ Read the [PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.h
 The Pygame-module will most likely not be inherited correctly by the interpreter. To Configure the interpreter again, navigate to the settings.
 ![image](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/a6d4681f-0c7e-48fb-a0ec-4a3227b24750)
 
+Add a new configuration.
+![Screenshot 2023-07-11 121114](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/a27b3075-186f-4431-b64e-fabbde58ebb6)
+Sake sure to check inherit global packages, after installing the pygame module
+
+[x] "inherit global site-packages" | [x] "Make available to all projects" ==> [ ]
+![Screenshot 2023-07-11 121524](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/d26b2d13-2139-4f7e-bf2b-1e1c00c650b8)
+
+#Important:
+The Environment needs to be in an empty folder, make sure to either delete the existing or creating a new folder by adding the foldername to the Location
+
+## Finally
+the project can be startet, either by clicking the triangular "Run"-button besides the configuration name or pressing "SHIFT + F10"
+![Screenshot 2023-07-11 122147](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/5b6075af-4ed4-427c-8dbb-c607e0d4f931)
+
+
 
 ### All links
 
@@ -81,10 +97,16 @@ https://www.jetbrains.com/pycharm/download/other.html
 ## Versions used in my case
 
 
-[Pycharm-Edu 2022](https://www.jetbrains.com/pycharm/download/other.html) was the IDE used throughout the project.
 
-[pygame releases]() can be found on Github or directly downloaded by the pip command: pip install pygame==2.3.0
+[pygame Documentation](https://www.pygame.org/docs/)
 
 [pygame 2.3.0](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl) for Python 3.11 and compiled for AMD64 is the version i used.
 
 [Python 3.11](https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe) for 64-Bit Windows is the version I used.
+[Instructions]([https://docs.python.org/Documentation](https://docs.python.org/3/))
+[Instructions](https://docs.python.org/3.11/using/windows.html#the-full-installer) Python 3.11 Win64 Instruction
+
+[PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.html
+
+[Pycharm-Edu 2022](https://www.jetbrains.com/pycharm/download/other.html) was the IDE used throughout the project.
+
