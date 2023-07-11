@@ -75,19 +75,19 @@ Select __init__.py as the initalization-script.
 Pygame manual installation:
 [pygame 2.3.0](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl) should've been downloaded and can be installed by typing the following command in the pycharm-Terminal:
 
-'pip install pygame-2.3.0-cp311-cp311-win_amd64.whl'
-or 'python - m pip install pygame-2.3.0-cp311-cp311-win_amd64.whl'
-either install from path: 'C:\Users\Username\Downloads\pygame-2.3.0-cp311-cp311-win_amd64.whl' (example)
+´pip install pygame-2.3.0-cp311-cp311-win_amd64.whl´
+or ´python - m pip install pygame-2.3.0-cp311-cp311-win_amd64.whl´
+either install from path: ´C:\Users\Username\Downloads\pygame-2.3.0-cp311-cp311-win_amd64.whl´ (example)
 or navigate the command prompt to the folder containing the pygame wheel-file.
 
 If you have problems installing pygame, like me. These parameters might help:
-'--disable-pip-version-check'
+´--disable-pip-version-check´
 
-'pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check'
+´pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check´
 
-'--force-reinstall'
+´--force-reinstall´
 
-'pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check --force-reinstall'
+´pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check --force-reinstall´
 
 Read the [PIP Developer](https://pip-python3.readthedocs.io/en/latest/news.html) for further help.
 
