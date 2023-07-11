@@ -1,15 +1,23 @@
-# Pygame-Platformer
+#### Pygame-Platformer
 This is a 2D-Platformer Game using sprites and elements of the sourcecode by [russ123](https://github.com/russs123/Platformer/tree/master).
 The goal of this project is to educate beginners on how to use python and structues such as classes in OOP-fashion.
 
 Pygame is a necessary library used widely throughout the project.
 
+# Controls:
+Left-Right Arrowkeys: Move
+
+Space: Jump
+
+TAB: Shoot Projectiles+
+
+P: Pause/Resume the game
+
 [Official Documentation](https://www.pygame.org/docs/)
 
 [Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
 
-## Instructions on how to start working on the project.
-All Links can be found below
+### Instructions to start working on the project.
 
 ## First Step:
 Installing Pycharm Edu is pretty straightforward and can be installed without admin-privileges by denying admin-authentification after starting the installer.
