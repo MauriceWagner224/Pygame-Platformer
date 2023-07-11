@@ -4,6 +4,10 @@ The goal of this project is to educate beginners on how to use python and struct
 
 Pygame is a necessary library used widely throughout the project.
 
+[Official Pygame Documentation](https://www.pygame.org/docs/)
+
+[Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
+___
 ### Controls:
 Left-Right Arrowkeys: Move
 
@@ -13,10 +17,7 @@ TAB: Shoot Projectiles+
 
 P: Pause/Resume the game
 
-[Official Documentation](https://www.pygame.org/docs/)
-
-[Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
-
+___
 ## Instructions to start working on the project.
 
 ### First Step:
@@ -75,19 +76,17 @@ Select __init__.py as the initalization-script.
 Pygame manual installation:
 [pygame 2.3.0](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl) should've been downloaded and can be installed by typing the following command in the pycharm-Terminal:
 
-´pip install pygame-2.3.0-cp311-cp311-win_amd64.whl´
-or ´python - m pip install pygame-2.3.0-cp311-cp311-win_amd64.whl´
-either install from path: ´C:\Users\Username\Downloads\pygame-2.3.0-cp311-cp311-win_amd64.whl´ (example)
+`pip install pygame-2.3.0-cp311-cp311-win_amd64.whl`
+or `python - m pip install pygame-2.3.0-cp311-cp311-win_amd64.whl`
+either install from path: `C:\Users\Username\Downloads\pygame-2.3.0-cp311-cp311-win_amd64.whl` (example)
 or navigate the command prompt to the folder containing the pygame wheel-file.
 
 If you have problems installing pygame, like me. These parameters might help:
-´--disable-pip-version-check´
+`--disable-pip-version-check`
 
-´pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check´
+`--force-reinstall`
 
-´--force-reinstall´
-
-´pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check --force-reinstall´
+`pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check --force-reinstall`
 
 Read the [PIP Developer](https://pip-python3.readthedocs.io/en/latest/news.html) for further help.
 
@@ -108,14 +107,14 @@ Sake sure to check inherit global packages, after installing the pygame module
 
 #Important:
 The Environment needs to be in an empty folder, make sure to either delete the existing or creating a new folder by adding the foldername to the Location
-
+___
 ## Finally
 the project can be startet, either by clicking the triangular "Run"-button besides the configuration name or pressing "SHIFT + F10"
 
 ![Screenshot 2023-07-11 122147](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/5b6075af-4ed4-427c-8dbb-c607e0d4f931)
 
 
-
+___
 ### All links
 
 # [Pygame-Documentation](https://www.pygame.org/docs)
