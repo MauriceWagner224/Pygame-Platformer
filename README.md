@@ -6,7 +6,7 @@ Pygame is a necessary library used widely throughout the project.
 
 [Official Documentation](https://www.pygame.org/docs/)
 
-[Useful Documentation-Notes](https://devdocs.io/pygame-pygame/)
+[Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
 
 ## Instructions on how to start working on the project.
 All Links can be found below
@@ -81,7 +81,7 @@ pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check
 
 pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check --force-reinstall
 
-Read the [PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.html) for further help.
+Read the [PIP Developer](https://pip-python3.readthedocs.io/en/latest/news.html) for further help.
 
 ## Last Step
 The Pygame-module will most likely not be inherited correctly by the interpreter. To Configure the interpreter again, navigate to the settings.
