@@ -128,26 +128,25 @@ width="50%" height="50%" border="10" /></a>
 
 
 ___
-### All links
+# All links
 
-# [Pygame-Documentation](https://www.pygame.org/docs)
+[Pygame-Documentation](https://www.pygame.org/docs)
 
-https://www.jetbrains.com/pycharm/download/other.html
+[PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.html)
+
+[Official Pygame Documentation](https://www.pygame.org/docs/)
+
+[Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
+
+## Versions by me
 
 
-## Versions used in my case
-
-
-
-[pygame Documentation](https://www.pygame.org/docs/)
 
 [pygame 2.3.0](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl) for Python 3.11 and compiled for AMD64 is the version i used.
 
 [Python 3.11](https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe) for 64-Bit Windows is the version I used.
 [Instructions]([https://docs.python.org/Documentation](https://docs.python.org/3/))
 [Instructions](https://docs.python.org/3.11/using/windows.html#the-full-installer) Python 3.11 Win64 Instruction
-
-[PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.html
 
 [Pycharm-Edu 2022](https://www.jetbrains.com/pycharm/download/other.html) was the IDE used throughout the project.
 
