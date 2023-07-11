@@ -103,12 +103,12 @@ The Pygame-module will most likely not be inherited correctly by the interpreter
 
 
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/a6d4681f-0c7e-48fb-a0ec-4a3227b24750.jpg" 
-width="50%" height="50%" border="10" /></a>
+width="30%" height="30%" border="10" /></a>
 
 Add a new configuration.
 
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/a27b3075-186f-4431-b64e-fabbde58ebb6.jpg" 
-width="30%" height="30%" border="10" /></a>
+width="70%" height="70%" border="10" /></a>
 
 Sake sure to check inherit global packages, after installing the pygame module
 
