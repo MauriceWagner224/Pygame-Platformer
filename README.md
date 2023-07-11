@@ -40,13 +40,14 @@ on the setup and more can be found here.
 
 [x] "Install for all Users" and [x] "Add Python to PATH" ==> [ ] "Install for all Users" and [ ] "Add Python to PATH"
 
-Uncheck both options: <a><img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98.jpg" 
+Uncheck both options: 
+<a><img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98.jpg" 
 width="50%" height="50%" border="10" /></a>
 ### Second Step:
 After Starting Pycharm for the first time, a new project can be created.
 
 <img src="[https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7).jpg" 
-width="50%" height="50%" border="10" /></a>
+width="50%" height="50%" border="10" />
 
 
 
