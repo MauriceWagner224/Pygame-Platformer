@@ -1,10 +1,10 @@
-#### Pygame-Platformer
+# Pygame-Platformer
 This is a 2D-Platformer Game using sprites and elements of the sourcecode by [russ123](https://github.com/russs123/Platformer/tree/master).
 The goal of this project is to educate beginners on how to use python and structues such as classes in OOP-fashion.
 
 Pygame is a necessary library used widely throughout the project.
 
-# Controls:
+### Controls:
 Left-Right Arrowkeys: Move
 
 Space: Jump
@@ -17,9 +17,9 @@ P: Pause/Resume the game
 
 [Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
 
-### Instructions to start working on the project.
+## Instructions to start working on the project.
 
-## First Step:
+### First Step:
 Installing Pycharm Edu is pretty straightforward and can be installed without admin-privileges by denying admin-authentification after starting the installer.
 
 [JetBrains](https://www.jetbrains.com/help/pycharm/installation-guide.html) 
@@ -41,7 +41,7 @@ on the setup and more can be found here.
 
 Uncheck both options: ![image](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98)
 
-## Second Step:
+### Second Step:
 After Starting Pycharm for the first time, a new project can be created.
 
 ![image](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7)
@@ -58,7 +58,7 @@ C:\Users\"Your Username"\AppData\Local\Programs\Python --> Select the python.exe
 
 Global-site packages can also be inherited
 
-## Third Step:
+### Third Step:
 
 All Project files can be moved to the project simply by selecting them in file-explorer followed by drag-and-drop to the project folder on the left of the PyCharm-Window.
 
@@ -71,23 +71,23 @@ Select __init__.py as the initalization-script.
 ![selectinit](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/070bd7e1-6bbe-4ac9-9d17-8b84846bf5d8)
 
 
-## Fourth Step
+### Fourth Step
 Pygame manual installation:
 [pygame 2.3.0](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl) should've been downloaded and can be installed by typing the following command in the pycharm-Terminal:
 
-# pip install pygame-2.3.0-cp311-cp311-win_amd64.whl
-or python - m pip install pygame-2.3.0-cp311-cp311-win_amd64.whl
-either install from path: C:\Users\Username\Downloads\pygame-2.3.0-cp311-cp311-win_amd64.whl (example)
+'pip install pygame-2.3.0-cp311-cp311-win_amd64.whl'
+or 'python - m pip install pygame-2.3.0-cp311-cp311-win_amd64.whl'
+either install from path: 'C:\Users\Username\Downloads\pygame-2.3.0-cp311-cp311-win_amd64.whl' (example)
 or navigate the command prompt to the folder containing the pygame wheel-file.
 
 If you have problems installing pygame, like me. These parameters might help:
---disable-pip-version-check
+'--disable-pip-version-check'
 
-pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check
+'pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check'
 
---force-reinstall
+'--force-reinstall'
 
-pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check --force-reinstall
+'pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check --force-reinstall'
 
 Read the [PIP Developer](https://pip-python3.readthedocs.io/en/latest/news.html) for further help.
 
