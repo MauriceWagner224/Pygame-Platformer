@@ -14,12 +14,18 @@ All Links can be found below
 ## First Step:
 Installing Pycharm Edu is pretty straightforward and can be installed without admin-privileges by denying admin-authentification after starting the installer.
 
-[JetBrains](https://www.jetbrains.com/help/pycharm/installation-guide.html) has further instructions on how to install and get started in Pycharm
+[JetBrains](https://www.jetbrains.com/help/pycharm/installation-guide.html) 
+
+has further instructions on how to install and get started in Pycharm
 
 
-[Python 3.11](https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe) should be installed next, so PyCharm has the correct version of Python installed. 
+[Python 3.11](https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe) 
 
-[Instructions](https://docs.python.org/3.11/using/windows.html#the-full-installer) on the setup and more can be found here.
+should be installed next, so PyCharm has the correct version of Python installed. 
+
+[Instructions](https://docs.python.org/3.11/using/windows.html#the-full-installer)
+
+on the setup and more can be found here.
 #Important: Users without Admin-Privileges need to uncheck the installer Options 
 
 
@@ -49,9 +55,11 @@ Global-site packages can also be inherited
 All Project files can be moved to the project simply by selecting them in file-explorer followed by drag-and-drop to the project folder on the left of the PyCharm-Window.
 
 A New Configuration for the project should be created next by clicking "Add Configuration" on the top of the PyCharm Window. Choose Python as standard-config.
+
 ![Screenshot 2023-07-11 113509](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/1925c1e4-c0bf-478d-8b75-e4c1f3c103d7)
 
 Select __init__.py as the initalization-script.
+
 ![selectinit](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/070bd7e1-6bbe-4ac9-9d17-8b84846bf5d8)
 
 
@@ -77,13 +85,17 @@ Read the [PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.h
 
 ## Last Step
 The Pygame-module will most likely not be inherited correctly by the interpreter. To Configure the interpreter again, navigate to the settings.
+
 ![image](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/a6d4681f-0c7e-48fb-a0ec-4a3227b24750)
 
 Add a new configuration.
+
 ![Screenshot 2023-07-11 121114](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/a27b3075-186f-4431-b64e-fabbde58ebb6)
+
 Sake sure to check inherit global packages, after installing the pygame module
 
-[x] "inherit global site-packages" | [x] "Make available to all projects" ==> [ ]
+[x] "inherit global site-packages" | [x] "Make available to all projects"
+
 ![Screenshot 2023-07-11 121524](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/d26b2d13-2139-4f7e-bf2b-1e1c00c650b8)
 
 #Important:
@@ -91,6 +103,7 @@ The Environment needs to be in an empty folder, make sure to either delete the e
 
 ## Finally
 the project can be startet, either by clicking the triangular "Run"-button besides the configuration name or pressing "SHIFT + F10"
+
 ![Screenshot 2023-07-11 122147](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/5b6075af-4ed4-427c-8dbb-c607e0d4f931)
 
 
