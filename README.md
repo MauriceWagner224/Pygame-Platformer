@@ -130,13 +130,14 @@ width="50%" height="50%" border="10" /></a>
 ___
 # All links
 
-[Pygame-Documentation](https://www.pygame.org/docs)
+[Python-Documentation](https://docs.python.org/3/)
 
-[PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.html)
 
 [Official Pygame Documentation](https://www.pygame.org/docs/)
 
 [Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
+
+[PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.html)
 
 ## Versions by me
 
