@@ -53,8 +53,7 @@ width="50%" height="50%" border="10" />
 
 Virtuelenv should be selected as an environment and Python 3.11 as the Base Interpreter for the Project
 
-![image](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/e4658d22-4cd6-4fbc-8059-96e21476e06c)
-<img src="[https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7).jpg" 
+<img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/e4658d22-4cd6-4fbc-8059-96e21476e06c.jpg" 
 width="30%" height="30%" border="10" /></a>
 
 If Python 3.11 can not be selected in the dropdown-menu, the installation should be found under (Windows only):
