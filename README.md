@@ -41,7 +41,7 @@ on the setup and more can be found here.
 [x] "Install for all Users" and [x] "Add Python to PATH" ==> [ ] "Install for all Users" and [ ] "Add Python to PATH"
 
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="50%" border="50%" /></a>
+alt="IMAGE ALT TEXT HERE" width="240" height="80%" border="80%" /></a>
 
 Uncheck both options: ![image](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98)
 
