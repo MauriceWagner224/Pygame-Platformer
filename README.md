@@ -54,7 +54,7 @@ width="50%" height="50%" border="10" />
 Virtuelenv should be selected as an environment and Python 3.11 as the Base Interpreter for the Project
 
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/e4658d22-4cd6-4fbc-8059-96e21476e06c.jpg" 
-width="30%" height="30%" border="10" /></a>
+width="50%" height="50%" border="10" /></a>
 
 If Python 3.11 can not be selected in the dropdown-menu, the installation should be found under (Windows only):
 
@@ -108,7 +108,7 @@ width="50%" height="50%" border="10" /></a>
 Add a new configuration.
 
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/a27b3075-186f-4431-b64e-fabbde58ebb6.jpg" 
-width="70%" height="70%" border="10" /></a>
+width="30%" height="30%" border="10" /></a>
 
 Sake sure to check inherit global packages, after installing the pygame module
 
