@@ -39,7 +39,7 @@ The project was written in the  64 Bit Version of Python 3.11.0 for Windows. (Do
 
 ## Important: Windows-users without Admin-Privileges need to uncheck the installer Options:
 
-[x] "Install for all Users" and [x] "Add Python to PATH" ==> [ ] "Install for all Users" and [ ] "Add Python to PATH"
+````[x] Install for all Users and [x] Add Python to PATH ==> [ ] Install for all Users and [ ] Add Python to PATH````
 
 Uncheck both options: 
 
@@ -58,9 +58,9 @@ Select virtuelenv as the environment and Python 3.11 as base interpreter for the
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/e4658d22-4cd6-4fbc-8059-96e21476e06c.jpg" 
 width="50%" height="50%" border="10" /></a>
 
-If Python 3.11 can not be selected in the dropdown-menu, the installation can be found in (Windows only):
+If Python 3.11 does not appear as a base interpreter in the dropdown-menu, you can manually set the path to the installation. For Windows-Users, the path can be found under:
 
-"C:\Users\%username%\AppData\Local\Programs\Python\Python311\python.exe"
+````C:\Users\%username%\AppData\Local\Programs\Python\Python311\python.exe````
 
 
 ### Third Step:
@@ -80,16 +80,17 @@ Select __init__.py as the initalization-script.
 width="50%" height="50%" border="10" /></a>
 
 ### Fourth Step
-````
 Pygame can be installed via pip online-distribution with the following command:
-
+````
 pip install pygame
 
 pip install pygame==2.3.0
 Add this parameter to install a specific version (2.3.0)
 ````
 ___
-````
+Should there be a problem installing Pygame this way and pip cannot fetch the library from the package index, follow the instruction for a manual installation below.
+___
+
 Pygame manual installation: [pygame 2.3.0.whl](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl)
 
 <img src="[https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7).jpg" 
