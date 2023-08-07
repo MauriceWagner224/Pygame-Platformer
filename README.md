@@ -23,48 +23,49 @@ ___
 ### First Step:
 Installing Pycharm Edu is pretty straightforward and can be installed without admin-privileges by denying admin-authentification after starting the installer.
 
-[JetBrains](https://www.jetbrains.com/help/pycharm/installation-guide.html) 
+#### [JetBrains](https://www.jetbrains.com/help/pycharm/installation-guide.html) 
 
 has further instructions on how to install and get started in Pycharm
 
 
-[Python 3.11](https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe) 
+#### [Python 3.11](https://www.python.org/ftp/python/3.11.0/) 
 
-should be installed next, so PyCharm has the correct version of Python installed. 
+select the correct version of Python for your OS and follow the instructions below.
 
-[Instructions](https://docs.python.org/3.11/using/windows.html#the-full-installer)
+The project was written in the  64 Bit Version of Python 3.11.0 for Windows. (Download for this Version can be found at the bottom of this document) 
 
-on the setup and more can be found here.
-#Important: Users without Admin-Privileges need to uncheck the installer Options 
 
+#### [Instructions](https://docs.python.org/3.11/using/windows.html#the-full-installer)
+
+## Important: Windows-users without Admin-Privileges need to uncheck the installer Options:
 
 [x] "Install for all Users" and [x] "Add Python to PATH" ==> [ ] "Install for all Users" and [ ] "Add Python to PATH"
 
 Uncheck both options: 
+
 <a><img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98.jpg" 
 width="50%" height="50%" border="10" /></a>
+
+
 ### Second Step:
 After Starting Pycharm for the first time, a new project can be created.
 
 <img src="[https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7).jpg" 
 width="50%" height="50%" border="10" />
 
-
-
-Virtuelenv should be selected as an environment and Python 3.11 as the Base Interpreter for the Project
+Select virtuelenv as the environment and Python 3.11 as base interpreter for the Project and check the option "inherit global site-packages".
 
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/e4658d22-4cd6-4fbc-8059-96e21476e06c.jpg" 
 width="50%" height="50%" border="10" /></a>
 
-If Python 3.11 can not be selected in the dropdown-menu, the installation should be found under (Windows only):
+If Python 3.11 can not be selected in the dropdown-menu, the installation can be found in (Windows only):
 
-C:\Users\"Your Username"\AppData\Local\Programs\Python --> Select the python.exe in the subfolder "Python311"
+"C:\Users\%username%\AppData\Local\Programs\Python\Python311\python.exe"
 
-Global-site packages can also be inherited
 
 ### Third Step:
 
-All Project files can be moved to the project simply by selecting them in file-explorer followed by drag-and-drop to the project folder on the left of the PyCharm-Window.
+All Project files can be moved to the project simply by selecting them in file-explorer and drag-and-drop to the project folder on the left side of PyCharm.
 
 A New Configuration for the project should be created next by clicking "Add Configuration" on the top of the PyCharm Window. Choose Python as standard-config.
 
@@ -79,8 +80,16 @@ Select __init__.py as the initalization-script.
 width="50%" height="50%" border="10" /></a>
 
 ### Fourth Step
-Pygame manual installation:
-[pygame 2.3.0](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl)
+Pygame can be installed via pip online-distribution with the following command:
+
+pip install pygame
+
+pip install pygame==2.3.0
+Add this parameter to install a specific version (2.3.0)
+
+
+Pygame manual installation: [pygame 2.3.0.whl](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl)
+
 <img src="[https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7).jpg" 
 width="50%" height="50%" border="10" /></a>should've been downloaded and can be installed by typing the following command in the pycharm-Terminal:
 
@@ -139,15 +148,18 @@ ___
 
 [PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.html)
 
-## Versions by me
+## Project was built using these versionsof Python and PyGame
+
+
+[[Python 3.11](https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe)] Windows AMD64
+
+[[pygame 2.3.0](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl)] Windows AMD64
 
 
 
-[pygame 2.3.0](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl) for Python 3.11 and compiled for AMD64 is the version i used.
-
-[Python 3.11](https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe) for 64-Bit Windows is the version I used.
 [Instructions]([https://docs.python.org/Documentation](https://docs.python.org/3/))
-[Instructions](https://docs.python.org/3.11/using/windows.html#the-full-installer) Python 3.11 Win64 Instruction
 
-[Pycharm-Edu 2022](https://www.jetbrains.com/pycharm/download/other.html) was the IDE used throughout the project.
+[Python 3.11 Installation](https://docs.python.org/3.11/using/windows.html#the-full-installer)  Win64 Installation 
+
+[Pycharm-Edu 2022](https://www.jetbrains.com/pycharm/download/other.html) IDE used throughout the project.
 
