@@ -23,21 +23,19 @@ ___
 ### First Step:
 Installing Pycharm Edu is pretty straightforward and can be installed without admin-privileges by denying admin-authentification after starting the installer.
 
-#### [JetBrains](https://www.jetbrains.com/help/pycharm/installation-guide.html) 
+#### [JetBrains](https://www.jetbrains.com/help/pycharm/installation-guide.html) has further instructions on how to install and get started in Pycharm
 
-has further instructions on how to install and get started in Pycharm
-
-
-#### [Python 3.11](https://www.python.org/ftp/python/3.11.0/) 
-
-select the correct version of Python for your OS and follow the instructions below.
-
-The project was written in the  64 Bit Version of Python 3.11.0 for Windows. (Download for this Version can be found at the bottom of this document) 
+#### [Python 3.11](https://www.python.org/ftp/python/3.11.0/) select the correct version of Python for your OS and follow the instructions below.
 
 
-#### [Instructions](https://docs.python.org/3.11/using/windows.html#the-full-installer)
+The project was written in the [64 Bit Version of Python 3.11](https://docs.python.org/3.11/using/windows.html#the-full-installer) for Windows 
 
-## Important: Windows-users without Admin-Privileges need to uncheck the installer Options:
+ for Windows. (Download for this Version can be found at the bottom of this document) 
+
+
+## [Instructions](https://docs.python.org/3.11/using/windows.html#the-full-installer)
+
+#### Important: Windows-users without Admin-Privileges need to uncheck the installer Options:
 
 ````[x] Install for all Users and [x] Add Python to PATH ==> [ ] Install for all Users and [ ] Add Python to PATH````
 
@@ -161,8 +159,6 @@ ___
 
 
 [Instructions]([https://docs.python.org/Documentation](https://docs.python.org/3/))
-
-[Python 3.11 Installation](https://docs.python.org/3.11/using/windows.html#the-full-installer)  Win64 Installation 
 
 [Pycharm-Edu 2022](https://www.jetbrains.com/pycharm/download/other.html) IDE used throughout the project.
 
