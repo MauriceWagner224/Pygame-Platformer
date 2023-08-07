@@ -24,7 +24,7 @@ P: Pause/Resume the game
 | Tab Key               |    Shoot projectiles   |
 | P                     |       Pause Game       | 
 
-#### Instructions to start working on the project.
+## Getting Started
 ___
 ### First Step:
 Installing Pycharm Edu is pretty straightforward and can be installed without admin-privileges by denying admin-authentification after starting the installer.
