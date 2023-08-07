@@ -43,7 +43,8 @@ The project was written in the [64 Bit Version of Python 3.11](https://docs.pyth
 
 #### Important: Windows-users without Admin-Privileges need to uncheck the installer Option ````Add Python to PATH````:
 
-~~- [x] Add Python to PATH~~ ==> - [ ] Add Python to PATH
+- [x] Add Python to PATH
+- [ ] Add Python to PATH
 
 <b>Uncheck</b> both options: 
 
