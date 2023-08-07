@@ -80,14 +80,16 @@ Select __init__.py as the initalization-script.
 width="50%" height="50%" border="10" /></a>
 
 ### Fourth Step
+````
 Pygame can be installed via pip online-distribution with the following command:
 
 pip install pygame
 
 pip install pygame==2.3.0
 Add this parameter to install a specific version (2.3.0)
-
-
+````
+___
+````
 Pygame manual installation: [pygame 2.3.0.whl](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl)
 
 <img src="[https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7).jpg" 
@@ -98,7 +100,7 @@ or `python - m pip install pygame-2.3.0-cp311-cp311-win_amd64.whl`
 either install from path: `C:\Users\Username\Downloads\pygame-2.3.0-cp311-cp311-win_amd64.whl` (example)
 or navigate the command prompt to the folder containing the pygame wheel-file.
 
-If you have problems installing pygame, like me. These parameters might help:
+If you have problems installing pygame. These parameters might help:
 `--disable-pip-version-check`
 
 `--force-reinstall`
@@ -106,7 +108,7 @@ If you have problems installing pygame, like me. These parameters might help:
 `pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check --force-reinstall`
 
 Read the [PIP Developer](https://pip-python3.readthedocs.io/en/latest/news.html) for further help.
-
+````
 ## Last Step
 The Pygame-module will most likely not be inherited correctly by the interpreter. To Configure the interpreter again, navigate to the settings.
 
