@@ -91,25 +91,29 @@ ___
 Should there be a problem installing Pygame this way and pip cannot fetch the library from the package index, follow the instruction for a manual installation below.
 ___
 
-Pygame manual installation: [pygame 2.3.0.whl](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl)
+Wheel file for manual istallation: [pygame 2.3.0.whl](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl)
 
 <img src="[https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7).jpg" 
-width="50%" height="50%" border="10" /></a>should've been downloaded and can be installed by typing the following command in the pycharm-Terminal:
+width="50%" height="50%" border="10" />
 
-`pip install pygame-2.3.0-cp311-cp311-win_amd64.whl`
-or `python - m pip install pygame-2.3.0-cp311-cp311-win_amd64.whl`
-either install from path: `C:\Users\Username\Downloads\pygame-2.3.0-cp311-cp311-win_amd64.whl` (example)
-or navigate the command prompt to the folder containing the pygame wheel-file.
+</a>After downloading the wheel file the following commands install the library from a local source.
+````
+> `pip install pygame-2.3.0-cp311-cp311-win_amd64.whl` 
+or > `python - m pip install pygame-2.3.0-cp311-cp311-win_amd64.whl
 
+Either install using the complete filepath:
+> `C:\Users\%username%\Downloads\pygame-2.3.0-cp311-cp311-win_amd64.whl` (example)
+or use the command prompt to navigate to the folder that contains the file 
 If you have problems installing pygame. These parameters might help:
-`--disable-pip-version-check`
 
-`--force-reinstall`
 
-`pip install pygame-2.3.0-cp311-cp311-win_amd64.whl --disable-pip-version-check --force-reinstall`
+> `--disable-pip-version-check` 
+
+> `--force-reinstall`
+````
 
 Read the [PIP Developer](https://pip-python3.readthedocs.io/en/latest/news.html) for further help.
-````
+___
 ## Last Step
 To include the pygame-module in the interpreter, navigate to settings and expand the projects settings on the left to edit the interpreter.
 
