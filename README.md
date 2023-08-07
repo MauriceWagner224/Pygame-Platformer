@@ -5,7 +5,7 @@ The goal of this project is to educate beginners on how to use python and struct
 Pygame is a necessary library used widely throughout the project.
 
 
-<div align="right">&#8673; <a href="#botto" title="Table of Contents">Documentation and more at the bottom</a></div>
+<div align="right">&darr; <a href="#botto" title="Table of Contents">Documentation and more at the bottom</a></div>
 
 ___
 ### Controls:
@@ -127,7 +127,7 @@ Make sure to check "inherit global packages", after installing the pygame module
 width="50%" height="50%" border="10" /></a>
 ___
 ## Finally
-the project can be startet, either by clicking the triangular "Run"-button besides the configuration name or pressing "SHIFT + F10"
+The project can be executed, either by clicking the triangular "Run"-button near the configuration dropdown-menu or pressing "SHIFT + F10".
 
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/5b6075af-4ed4-427c-8dbb-c607e0d4f931.jpg" 
 width="50%" height="50%" border="10" /></a>
@@ -145,7 +145,7 @@ ___
 
 [PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.html)
 
-## Project was built using these versionsof Python and PyGame
+## Project was built using these versions of Python and PyGame
 
 [[Python 3.11](https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe)] Windows AMD64
 
