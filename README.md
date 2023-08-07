@@ -136,26 +136,20 @@ width="50%" height="50%" border="10" /></a>
 ___
 # All links
 <div id="botto"></div>
+
 [Python-Documentation](https://docs.python.org/3/)
 
 [Official Pygame Documentation](https://www.pygame.org/docs/)
 
-[Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
-
-[Official Pygame Documentation](https://www.pygame.org/docs/)
-
-[Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
+[Pygame Developer-Notes](https://devdocs.io/pygame-pygame/)
 
 [PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.html)
 
 ## Project was built using these versionsof Python and PyGame
 
-
 [[Python 3.11](https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe)] Windows AMD64
 
 [[pygame 2.3.0](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl)] Windows AMD64
-
-
 
 [Instructions]([https://docs.python.org/Documentation](https://docs.python.org/3/))
 
