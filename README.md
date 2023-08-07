@@ -41,12 +41,10 @@ The project was written in the [64 Bit Version of Python 3.11](https://docs.pyth
 
 #### [Installing Python](https://docs.python.org/3.11/using/windows.html#the-full-installer)
 
-#### Important: Windows-users without Admin-Privileges need to uncheck the installer Option ````Add Python to PATH````:
+Important: Windows-users without Admin-Privileges need to **<ins>uncheck</ins>** the installer Option: ````Add Python to PATH````
 
-- [x] Add Python to PATH
+~~- [x] Add Python to PATH~~
 - [ ] Add Python to PATH
-
-<b>Uncheck</b> both options: 
 
 <a><img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98.jpg" 
 width="50%" height="50%" border="10" /></a>
