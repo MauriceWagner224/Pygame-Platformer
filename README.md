@@ -9,7 +9,7 @@ Pygame is a necessary library used widely throughout the project.
 [Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
 ___
 ### Controls:
-Left-Right Arrowkeys: Move
+&larr; LeftArrow Righ-Arrowkeyt &rarr;	
 
 Space: Jump
 
@@ -17,9 +17,8 @@ TAB: Shoot Projectiles+
 
 P: Pause/Resume the game
 
+#### Instructions to start working on the project.
 ___
-## Instructions to start working on the project.
-
 ### First Step:
 Installing Pycharm Edu is pretty straightforward and can be installed without admin-privileges by denying admin-authentification after starting the installer.
 
@@ -33,17 +32,16 @@ The project was written in the [64 Bit Version of Python 3.11](https://docs.pyth
  for Windows. (Download for this Version can be found at the bottom of this document) 
 
 
-## [Instructions](https://docs.python.org/3.11/using/windows.html#the-full-installer)
+#### [Installing Python](https://docs.python.org/3.11/using/windows.html#the-full-installer)
 
 #### Important: Windows-users without Admin-Privileges need to uncheck the installer Options:
 
 ````[x] Install for all Users and [x] Add Python to PATH ==> [ ] Install for all Users and [ ] Add Python to PATH````
 
-Uncheck both options: 
+<b>Uncheck</b> both options: 
 
 <a><img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98.jpg" 
 width="50%" height="50%" border="10" /></a>
-
 
 ### Second Step:
 After Starting Pycharm for the first time, a new project can be created.
@@ -60,7 +58,7 @@ If Python 3.11 does not appear as a base interpreter in the dropdown-menu, you c
 
 ````C:\Users\%username%\AppData\Local\Programs\Python\Python311\python.exe````
 
-
+___
 ### Third Step:
 
 All Project files can be moved to the project simply by selecting them in file-explorer and drag-and-drop to the project folder on the left side of PyCharm.
@@ -70,13 +68,12 @@ A New Configuration for the project should be created next by clicking "Add Conf
 ![Screenshot 2023-07-11 113509](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/1925c1e4-c0bf-478d-8b75-e4c1f3c103d7)
 <img src="[https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7).jpg" 
 width="50%" height="50%" border="10" /></a>
-
 Select __init__.py as the initalization-script.
 
 ![selectinit](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/070bd7e1-6bbe-4ac9-9d17-8b84846bf5d8)
 <img src="[https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7).jpg" 
 width="50%" height="50%" border="10" /></a>
-
+___
 ### Fourth Step
 Pygame can be installed via pip online-distribution with the following command:
 ````
@@ -85,9 +82,9 @@ pip install pygame
 pip install pygame==2.3.0
 Add this parameter to install a specific version (2.3.0)
 ````
-___
+* * * 
 Should there be a problem installing Pygame this way and pip cannot fetch the library from the package index, follow the instruction for a manual installation below.
-___
+* * * 
 
 Wheel file for manual istallation: [pygame 2.3.0.whl](https://github.com/pygame/pygame/releases/download/2.3.0/pygame-2.3.0-cp311-cp311-win_amd64.whl)
 
@@ -95,7 +92,7 @@ Wheel file for manual istallation: [pygame 2.3.0.whl](https://github.com/pygame/
 width="50%" height="50%" border="10" />
 
 </a>After downloading the wheel file the following commands install the library from a local source.
-````
+
 > `pip install pygame-2.3.0-cp311-cp311-win_amd64.whl` 
 or > `python - m pip install pygame-2.3.0-cp311-cp311-win_amd64.whl
 
@@ -108,9 +105,9 @@ If you have problems installing pygame. These parameters might help:
 > `--disable-pip-version-check` 
 
 > `--force-reinstall`
-````
 
-Read the [PIP Developer](https://pip-python3.readthedocs.io/en/latest/news.html) for further help.
+
+Read the [PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.html) for further help.
 ___
 ## Last Step
 To include the pygame-module in the interpreter, navigate to settings and expand the projects settings on the left to edit the interpreter.
