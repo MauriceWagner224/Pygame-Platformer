@@ -9,9 +9,6 @@ Pygame is a necessary library used widely throughout the project.
 
 ___
 ### Controls:
-&larr; Left-Arrow Key and Righ-Arrow Key &rarr;	for horizontal movement
-
-P: Pause/Resume the game
 |         Key           |         Action         | 
 | :-------------------- | :--------------------: |
 | &larr; Left-Arrow Key |       Move Left        |
