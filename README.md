@@ -9,13 +9,20 @@ Pygame is a necessary library used widely throughout the project.
 [Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
 ___
 ### Controls:
-&larr; LeftArrow Righ-Arrowkeyt &rarr;	
+&larr; Left-Arrow Key and Righ-Arrow Key &rarr;	for horizontal movement
 
 Space: Jump
 
 TAB: Shoot Projectiles+
 
 P: Pause/Resume the game
+|         Key           |         Action         | 
+| :-------------------- | :--------------------: |
+| &larr; Left-Arrow Key |       Move Left        |
+| &rarr; Righ-Arrow Key |       Move Right       |
+| Spacebar              |          Jump          |
+| Tab Key               |    Shoot projectiles   |
+| P                     |       Pause Game       | 
 
 #### Instructions to start working on the project.
 ___
@@ -34,9 +41,9 @@ The project was written in the [64 Bit Version of Python 3.11](https://docs.pyth
 
 #### [Installing Python](https://docs.python.org/3.11/using/windows.html#the-full-installer)
 
-#### Important: Windows-users without Admin-Privileges need to uncheck the installer Options:
+#### Important: Windows-users without Admin-Privileges need to uncheck the installer Option ````Add Python to PATH````:
 
-````[x] Install for all Users and [x] Add Python to PATH ==> [ ] Install for all Users and [ ] Add Python to PATH````
+~~- [x] Add Python to PATH~~ ==> - [ ] Add Python to PATH
 
 <b>Uncheck</b> both options: 
 
