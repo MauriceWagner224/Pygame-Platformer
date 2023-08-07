@@ -27,9 +27,9 @@ Installing Pycharm Edu is pretty straightforward and can be installed without ad
 #### [Python 3.11](https://www.python.org/ftp/python/3.11.0/) select the correct version of Python for your OS and follow the instructions below.
 
 
-The project was written in the [64 Bit Version of Python 3.11](https://docs.python.org/3.11/using/windows.html#the-full-installer) for Windows 
+The project was written in the [64 Bit Version of Python 3.11](https://docs.python.org/3.11/using/windows.html#the-full-installer) for Windows .
 
- for Windows. (Download for this Version can be found at the bottom of this document) 
+(Download for this Version can be found at the bottom of this document) 
 
 
 #### [Installing Python](https://docs.python.org/3.11/using/windows.html#the-full-installer)
@@ -55,7 +55,9 @@ width="50%" height="50%" border="10" /></a>
 
 If Python 3.11 does not appear as a base interpreter in the dropdown-menu, you can manually set the path to the installation. For Windows-Users, the path can be found under:
 
-````C:\Users\%username%\AppData\Local\Programs\Python\Python311\python.exe````
+````
+C:\Users\%username%\AppData\Local\Programs\Python\Python311\python.exe
+````
 
 ___
 ### Third Step:
@@ -79,8 +81,9 @@ Pygame can be installed via pip online-distribution with the following command:
 pip install pygame
 
 pip install pygame==2.3.0
-Add this parameter to install a specific version (2.3.0)
 ````
+Add this parameter to install a specific version (2.3.0)
+
 * * * 
 Should there be a problem installing Pygame this way and pip cannot fetch the library from the package index, follow the instruction for a manual installation below.
 * * * 
@@ -92,20 +95,23 @@ width="50%" height="50%" border="10" />
 
 </a>After downloading the wheel file the following commands install the library from a local source.
 
-> `pip install pygame-2.3.0-cp311-cp311-win_amd64.whl` 
-or > `python - m pip install pygame-2.3.0-cp311-cp311-win_amd64.whl
+````
+> pip install pygame-2.3.0-cp311-cp311-win_amd64.whl
+or
+> python - m pip install pygame-2.3.0-cp311-cp311-win_amd64.whl
+````
 
 Either install using the complete filepath:
-> `C:\Users\%username%\Downloads\pygame-2.3.0-cp311-cp311-win_amd64.whl` (example)
+````
+> C:\Users\%username%\Downloads\pygame-2.3.0-cp311-cp311-win_amd64.whl
+```` 
 or use the command prompt to navigate to the folder that contains the file 
 If you have problems installing pygame. These parameters might help:
+````
+> --disable-pip-version-check
 
-
-> `--disable-pip-version-check` 
-
-> `--force-reinstall`
-
-
+> --force-reinstall
+````
 Read the [PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.html) for further help.
 ___
 ## Last Step
