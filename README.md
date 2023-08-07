@@ -46,14 +46,14 @@ Important: Windows-users without Admin-Privileges need to **<ins>uncheck</ins>**
 ~~- [x] Add Python to PATH~~
 - [ ] Add Python to PATH
 
-<a><img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98.jpg" 
+<a><img src=" 
 width="50%" height="50%" border="10" /></a>
 
 ### Second Step:
 After Starting Pycharm for the first time, a new project can be created.
 
-<img src="[https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7).jpg" 
-width="50%" height="50%" border="10" />
+<img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/e13c5455-5736-45ad-b8e6-5d5838b21bf7"
+width="50%" height="50%" border="10" /></a>
 
 Select virtuelenv as the environment and Python 3.11 as base interpreter for the Project and check the option "inherit global site-packages".
 
