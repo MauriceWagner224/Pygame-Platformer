@@ -4,16 +4,12 @@ The goal of this project is to educate beginners on how to use python and struct
 
 Pygame is a necessary library used widely throughout the project.
 
-[Official Pygame Documentation](https://www.pygame.org/docs/)
 
-[Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
+<div align="right">&#8673; <a href="#botto" title="Table of Contents">Documentation and more at the bottom</a></div>
+
 ___
 ### Controls:
 &larr; Left-Arrow Key and Righ-Arrow Key &rarr;	for horizontal movement
-
-Space: Jump
-
-TAB: Shoot Projectiles+
 
 P: Pause/Resume the game
 |         Key           |         Action         | 
@@ -142,9 +138,12 @@ width="50%" height="50%" border="10" /></a>
 
 ___
 # All links
-
+<div id="botto"></div>
 [Python-Documentation](https://docs.python.org/3/)
 
+[Official Pygame Documentation](https://www.pygame.org/docs/)
+
+[Useful Developer-Notes](https://devdocs.io/pygame-pygame/)
 
 [Official Pygame Documentation](https://www.pygame.org/docs/)
 
