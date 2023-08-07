@@ -110,8 +110,7 @@ If you have problems installing pygame. These parameters might help:
 Read the [PIP Developer](https://pip-python3.readthedocs.io/en/latest/news.html) for further help.
 ````
 ## Last Step
-The Pygame-module will most likely not be inherited correctly by the interpreter. To Configure the interpreter again, navigate to the settings.
-
+To include the pygame-module in the interpreter, navigate to settings and expand the projects settings on the left to edit the interpreter.
 
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/a6d4681f-0c7e-48fb-a0ec-4a3227b24750.jpg" 
 width="30%" height="30%" border="10" /></a>
@@ -121,15 +120,12 @@ Add a new configuration.
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/a27b3075-186f-4431-b64e-fabbde58ebb6.jpg" 
 width="70%" height="70%" border="10" /></a>
 
-Sake sure to check inherit global packages, after installing the pygame module
+Make sure to check "inherit global packages", after installing the pygame module.
 
 [x] "inherit global site-packages" | [x] "Make available to all projects"
 
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/d26b2d13-2139-4f7e-bf2b-1e1c00c650b8.jpg" 
 width="50%" height="50%" border="10" /></a>
-
-#Important:
-The Environment needs to be in an empty folder, make sure to either delete the existing or creating a new folder by adding the foldername to the Location
 ___
 ## Finally
 the project can be startet, either by clicking the triangular "Run"-button besides the configuration name or pressing "SHIFT + F10"
