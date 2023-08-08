@@ -20,12 +20,11 @@ ___
 ## Getting Started
 ___
 ### First Step:
-Installing Pycharm Edu is pretty straightforward and can be installed without admin-privileges by denying admin-authentification after starting the installer.
+Installing Pycharm Edu is pretty straightforward and can be done without Windows' admin-privileges by denying administrator-authentification when executing the installer.
 
-#### [JetBrains](https://www.jetbrains.com/help/pycharm/installation-guide.html) has further instructions on how to install and get started in Pycharm
+#### [JetBrains](https://www.jetbrains.com/help/pycharm/installation-guide.html) further instructions on how to install and get started in Pycharm
 
-#### [Python 3.11](https://www.python.org/ftp/python/3.11.0/) select the correct version of Python for your OS and follow the instructions below.
-
+#### [Python 3.11](https://www.python.org/ftp/python/3.11.0/) select the correct build of Python for your OS and follow the instructions below.
 
 The project was written in the [64 Bit Version of Python 3.11](https://docs.python.org/3.11/using/windows.html#the-full-installer) for Windows .
 
@@ -36,42 +35,50 @@ The project was written in the [64 Bit Version of Python 3.11](https://docs.pyth
 
 Important: Windows-users without Admin-Privileges need to **<ins>uncheck</ins>** the installer Option: ````Add Python to PATH````
 
-~~- [x] Add Python to PATH~~
+- [x] ~~Add Python to PATH~~
 - [ ] Add Python to PATH
-
-<a><img src=" 
-width="50%" height="50%" border="10" /></a>
-
-### Second Step:
-After Starting Pycharm for the first time, a new project can be created.
 
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/e13c5455-5736-45ad-b8e6-5d5838b21bf7"
 width="50%" height="50%" border="10" /></a>
+___
+### Second Step:
+Start Pycharm Pycharm and create a new project.
+Select virtuelenv as the environment and Python 3.11 as base interpreter. 
 
-Select virtuelenv as the environment and Python 3.11 as base interpreter for the Project and check the option "inherit global site-packages".
 
-<img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/e4658d22-4cd6-4fbc-8059-96e21476e06c.jpg" 
+**Be Sure to check the option "<ins>inherit global site-packages</ins>"** :white_check_mark:
+
+
+- [ ] ~~inherit global site-packages~~
+
+- [x] <ins>inherit global site-packages </ins>
+
+<a><img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/e4658d22-4cd6-4fbc-8059-96e21476e06c.jpg" 
 width="50%" height="50%" border="10" /></a>
 
-If Python 3.11 does not appear as a base interpreter in the dropdown-menu, you can manually set the path to the installation. For Windows-Users, the path can be found under:
+If Python 3.11 does not appear as a base interpreter in the dropdown-menu, you can manually set the installationpath. For Windows-Users, the path can be found under:
 
 ````
 C:\Users\%username%\AppData\Local\Programs\Python\Python311\python.exe
 ````
 
+In the bottom right corner of Pycharm, the existing Python-Interpreter can be edited and a new one created, should the inheritance of global packages be missing etc. 
 ___
 ### Third Step:
 
 All Project files can be moved to the project simply by selecting them in file-explorer and drag-and-drop to the project folder on the left side of PyCharm.
+ 
 
-A New Configuration for the project should be created next by clicking "Add Configuration" on the top of the PyCharm Window. Choose Python as standard-config.
+A New Configuration for the project should be created next by clicking the "Add Configuration"-button at the top-left of the PyCharm Window. Choose Python as standard-config.
 
-![Screenshot 2023-07-11 113509](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/1925c1e4-c0bf-478d-8b75-e4c1f3c103d7)
-<img src="[https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7).jpg" 
-width="50%" height="50%" border="10" /></a>
+<a width="50%" height="50%" border="10">![Screenshot 2023-07-11 113509](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/6f88f3be-3141-4b6f-92d7-bead388a4c79)
+</a>
+
+Add a new Configuration by clicking the <code>+</code> symbol in the top-left corner of the Configuration-Window
+
 Select __init__.py as the initalization-script.
 
-![selectinit](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/070bd7e1-6bbe-4ac9-9d17-8b84846bf5d8)
+<a>![selectinit](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/070bd7e1-6bbe-4ac9-9d17-8b84846bf5d8)
 <img src="[https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/4565c1b6-1d5f-4427-9b64-a6604acf5d98](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/daf70024-dd28-409a-a725-eaba76a786e7).jpg" 
 width="50%" height="50%" border="10" /></a>
 ___
@@ -115,17 +122,17 @@ If you have problems installing pygame. These parameters might help:
 Read the [PIP Documentation](https://pip-python3.readthedocs.io/en/latest/news.html) for further help.
 ___
 ## Last Step
-To include the pygame-module in the interpreter, navigate to settings and expand the projects settings on the left to edit the interpreter.
+To include the pygame-module in the interpreter, click on the Python-Version in the bottom-right corner of the Pycharm-Window to edit the Python Interpreter for the project.
 
-<img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/a6d4681f-0c7e-48fb-a0ec-4a3227b24750.jpg" 
-width="30%" height="30%" border="10" /></a>
+<img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/5f399dfd-9220-4e13-b8c7-c0b3d38ea697" 
+width="50%" height="50%" border="10" /></a>
 
-Add a new configuration.
+Select "Add a new Interpreter"
 
 <img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/a27b3075-186f-4431-b64e-fabbde58ebb6.jpg" 
 width="70%" height="70%" border="10" /></a>
 
-Make sure to check "inherit global packages", after installing the pygame module.
+Make sure to check "inherit global site-packages to include the pygame-library that was installed earlier
 
 [x] "inherit global site-packages" | [x] "Make available to all projects"
 
