@@ -1,11 +1,13 @@
-# Pygame-Platformer
-This is a 2D-Platformer Game using sprites and elements of the sourcecode by [russ123](https://github.com/russs123/Platformer/tree/master).
-The goal of this project is to educate beginners on how to use python and elements of it such as classes.
-
-Pygame is a necessary library used widely throughout the project.
-
-
 <div align="right">&darr; <a href="#botto" title="Table of Contents">Documentation and more at the bottom</a></div>
+
+# Pygame-Platformer
+<div><blockquote>
+This is a 2D-Platformer Game using sprites and elements of the sourcecode by [russ123](https://github.com/russs123/Platformer/tree/master).
+The goal of this project is to educate beginners on Python and understanding basic concepts of programming in an easy and interesting way.
+
+
+Pygame is a free and open-source cross-platform library for Python that allows easy creation of multimedia applications and games. It uses the Simple DirectMedia Layer library and several other popular libraries to abstract the most common functions, making writing these programs a more intuitive task.
+</blockquote></div>
 
 ___
 ### Controls:
