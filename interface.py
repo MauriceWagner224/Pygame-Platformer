@@ -2,8 +2,8 @@ import pygame
 
 from properties import *
 
-# parent class with basic params that are in common with it's children
-class UserInterface():
+# parent class with basic params it has in common with it's children
+class InterfaceHandler():
 	def __init__(self, screen):
 		self.screen = screen
 
@@ -12,6 +12,7 @@ class UserInterface():
 		self.restart_button = Button(self.screen, screen_width // 2 -restart_img.get_width()/2, screen_height // 2, restart_img)
 		self.start_button = Button(self.screen, screen_width // 2 - start_img.get_width()/2, screen_height // 2, start_img)
 		self.exit_button = Button(self.screen, screen_width // 2 - exit_btn.get_width()/2, screen_height // 2 + 150, exit_btn)
+		return self
 
 	def drawText(self, text, screen, width, height, size):
 		# load custom font
@@ -25,7 +26,6 @@ class UserInterface():
 class Button(object):
 	def __init__(self, screen, x, y, image):
 		self.screen = screen
-		self.clicked = False
 		self.action = False
 		self.image = image
 		self.rect = self.image.get_rect()
@@ -39,7 +39,7 @@ class Button(object):
 		# get mouse position
 		pos = pygame.mouse.get_pos()
 
-		# when the button is drawn, check if button is clicked and return both cases
+		# when the button is drawn, check if mousebutton got pressed and is colliding with the cursor
 		if self.rect.collidepoint(pos):
 			if pygame.mouse.get_pressed()[0]:
 				self.action = True

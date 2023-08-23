@@ -3,18 +3,20 @@ from sprites import Missile
 from properties import *
 
 
-""" Playerclass contains the handling of the Playersprite and collision/interaction with other sprites, Playermotion, movement etc."""
+""" Playerclass contains the handling of the Playersprite and collision/interaction with other sprites, Playermotion, movement etc.
+    gameAttr is referencing a variable through which we can access the whole instace of Gameclass and it's instance variables
+"""
 class Player(pygame.sprite.Sprite):
     def __init__(self, x, y, gameAttr):
         pygame.sprite.Sprite.__init__(self)
         self.jumped = False
         self.isdead = False
         self.in_air = True
-        # Pass attributes of class Game
+        # references the instance of GameHandler to access all of its attributes
         self.gameAttr = gameAttr
         # direction for left/right walking animation
         self.direction = 0
-        # position vector | velocity and acceleration as x/y vectors
+        # position vector | velocity x/y vectors
         vector = pygame.math.Vector2
         self.vel = vector(0, 0)
         # x and y displacement, distance moved in one direction variable is used for reverting movement when colliding with objects
@@ -29,7 +31,7 @@ class Player(pygame.sprite.Sprite):
         self.index = 0
         self.loadAnimationSprites()
         self.counter = 0
-        self.walk_cooldown = 8
+        self.walk_cooldown = 6
         # rectangle properties
         self.rect = self.images_right[1].get_rect()
         self.width = self.images_right[1].get_width()
@@ -40,20 +42,19 @@ class Player(pygame.sprite.Sprite):
 
     """ update function called by Gameclass-update"""
     def update(self):
+        # reset velocity and directional movement
         self.dx = 0
         self.dy = 0
         self.vel.x = 0
-        self.walk_cooldown = 8
         self.movement()
         self.gravity()
         self.animate()
         self.collision()
-        # update player coordinates, after collision may've reversed changes in position
+        # update player coordinates, after collision to reverse changes in position
         self.rect.x += self.dx
         self.rect.y += self.dy
         # draw player onto screen
-        pygame.draw.rect(self.gameAttr.screen,(255, 255, 255), self.rect, -1)
-        self.gameAttr.screen.blit(self.image, self.rect)
+
 
 
 
@@ -81,16 +82,18 @@ class Player(pygame.sprite.Sprite):
                     self.vel.y = 0
                     self.in_air = False
         for enemy in self.gameAttr.enemy_sprites: # the players dies when an enemy collides with him
-            if self.rect.colliderect(enemy.rect):
+            if self.rect.colliderect(enemy.hitbox):
                 self.isdead = True
+                self.coins = 0
+            #pygame.draw.rect(self.gameAttr.screen,0, enemy.hitbox)
             # kill the enemy and sprite, when collide
+            # draw the hitbox of the enemy in comment above
             for missile in self.gameAttr.missile_sprites: # the enemy dies, should it collide with a missile(which is also killed)
                 if missile.rect.colliderect(enemy):
                     missile.kill()
                     enemy.kill()
-        for tile in self.gameAttr.ExitsGroup:
+        for tile in self.gameAttr.ExitGroup:
             if tile.rect.colliderect(self):
-                self.gameAttr.previousCoins = self.coins
                 self.gameAttr.nextWorld()  # the world is reset and the next one loaded
         for coin in self.gameAttr.CoinGroup:
             self.coins = abs(self.gameAttr.coins)
@@ -105,7 +108,7 @@ class Player(pygame.sprite.Sprite):
     def movement(self):
         key = pygame.key.get_pressed()
         if key[pygame.K_SPACE] and self.jumped == False and self.in_air == False:
-            self.vel.y = -14 #-16
+            self.vel.y = -14
             self.jumped = True
         if not key[pygame.K_SPACE]:
             self.jumped = False
@@ -121,7 +124,7 @@ class Player(pygame.sprite.Sprite):
             self.direction = 1
         else:
             self.animate(False)
-        if key[pygame.K_TAB]:
+        if key[pygame.K_TAB]: # new missile entity is spawned moving in the direction of the player
             self.ptick.append(pygame.time.get_ticks())
             for tick in self.ptick:
                 if tick >= self.ptick[0] + 100: # every 100ticks, spawn a new missile
@@ -132,10 +135,10 @@ class Player(pygame.sprite.Sprite):
 
     """gravity simply adds consistent y-movement, to make the player fall. Not pretty, but convenient"""
     def gravity(self):
-
+        #   constantly add y velocity to speed up the fall
         if self.in_air == True:
             self.vel.y += 1.2
-
+        # limit max falling-speed
         if self.vel.y > 18:
            self.vel.y = 18
         self.dy += self.vel.y
