@@ -1,9 +1,9 @@
-<div align="right">&darr; <a href="#botto" title="Table of Contents">Documentation and more at the bottom</a></div>
+<div align="right">&darr; <a href="#botto" title="Table of Contents">Downloads and Documents are at the bottom</a></div>
 
 # Pygame-Platformer
 <div><blockquote>
 This is a 2D-Platformer Game using sprites and elements of the sourcecode by [russ123](https://github.com/russs123/Platformer/tree/master).
-The goal of this project is to educate beginners on Python and understanding basic concepts of programming in an easy and interesting way.
+The goal of this project is to educate Python-beginners and teach basic concepts of programming in an easy and interesting way.
 
 
 Pygame is a free and open-source cross-platform library for Python that allows easy creation of multimedia applications and games. It uses the Simple DirectMedia Layer library and several other popular libraries to abstract the most common functions, making writing these programs a more intuitive task.
@@ -19,18 +19,19 @@ ___
 | Tab Key               |    Shoot projectiles   |
 | P                     |       Pause Game       | 
 
-## Getting Started
+## Getting Started : Installation
 ___
 ### First Step:
-Installing Pycharm Edu is pretty straightforward and can be done without Windows' admin-privileges by denying administrator-authentification when executing the installer.
+Installing Pycharm Edu is pretty straightforward and can be done without Windows' admin-privileges by denying administrator-authentification in the installer.
 
-#### [JetBrains](https://www.jetbrains.com/help/pycharm/installation-guide.html) further instructions on how to install and get started in Pycharm
+#### [Instal Pycharm](https://www.jetbrains.com/help/pycharm/installation-guide.html) select your preferred Pycharm-Version, and follow the installation guide
+
+[Pycharm-Edu 2022](https://www.jetbrains.com/pycharm/download/other.html) Pycharm-EDU 2022 was used for this project. 
 
 #### [Python 3.11](https://www.python.org/ftp/python/3.11.0/) select the correct build of Python for your OS and follow the instructions below.
 
 The project was written in the [64 Bit Version of Python 3.11](https://docs.python.org/3.11/using/windows.html#the-full-installer) for Windows .
 
-(Download for this Version can be found at the bottom of this document) 
 
 
 #### [Installing Python](https://docs.python.org/3.11/using/windows.html#the-full-installer)
@@ -44,9 +45,8 @@ Important: Windows-users without Admin-Privileges need to **<ins>uncheck</ins>**
 width="50%" height="50%" border="10" /></a>
 ___
 ### Second Step:
-Download the projectfiles, select a destination and create a folder for the project.
 
-Copy the project files into the freshly created folder and start Pycharm.
+Download and extract the project files into to your preferred project location. 
 
 The first time Pycharm is run, it will prompt you to create a new project. If this is not the case, select the "File"-dropdown-menu and click on "new project"
  
@@ -59,15 +59,12 @@ width="50%" height="50%" border="10" />
 
 **Be Sure to check the option "<ins>inherit global site-packages</ins>"** :white_check_mark:
 
-
-- [ ] ~~inherit global site-packages~~
-
-- [x] <ins>inherit global site-packages </ins>
+- [x] <ins>inherit global site-packages 
 
 <img src="https://user-images.githubusercontent.com/79831881/252632360-d26b2d13-2139-4f7e-bf2b-1e1c00c650b8.png" width=50% height=50% border=5></img>
 
 
-If Python 3.11 does not appear as a base interpreter in the dropdown-menu, you can manually set the installationpath. For Windows-Users, the path can be found under:
+If Python 3.11 does not appear as a base interpreter in the dropdown-menu, you can set the installationpath manually. For Windows-Users, the path should be:
 
 `C:\Users\%username%\AppData\Local\Programs\Python\Python311\python.exe`
 
@@ -75,7 +72,7 @@ In the bottom right corner of Pycharm, the existing Python-Interpreter can be ed
 ___
 ### Third Step:
 
-A New Configuration for the project is created by clicking the button labeled `Edit Configuration` at the top-left of the PyCharm Window and then choosing to add a new configuration.
+A New Configuration for the project is created by clicking the button labeled `Edit Configuration` in the top-left corner of the PyCharm Window and then choosing to add a new configuration.
 
 <a width="50%" height="50%" border="10">![Screenshot 2023-07-11 113509](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/6f88f3be-3141-4b6f-92d7-bead388a4c79)
 </a>
