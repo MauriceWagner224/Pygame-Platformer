@@ -35,7 +35,7 @@ The project was written in the [64 Bit Version of Python 3.11](https://docs.pyth
 
 #### [Installing Python](https://docs.python.org/3.11/using/windows.html#the-full-installer)
 
-Important: Windows-users without Admin-Privileges need to **<ins>uncheck</ins>** the installer Option: ````Add Python to PATH````
+Important: Windows-users without Admin-Privileges need to **<ins>uncheck</ins>** the installer Option:
 
 - [x] ~~Add Python to PATH~~
 - [ ] Add Python to PATH
@@ -52,19 +52,16 @@ The first time Pycharm is run, it will prompt you to create a new project. If th
  
 Select the folder you created as the project location. 
 
-Select virtuelenv as the environment and Python 3.11 as base interpreter. 
+And create a new virtuelenv as the environment and Python 3.11 for base interpreter. 
 
-<img src="https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/d26b2d13-2139-4f7e-bf2b-1e1c00c650b8.jpg" 
-width="50%" height="50%" border="10" />
-
-**Be Sure to check the option "<ins>inherit global site-packages</ins>"** :white_check_mark:
-
-
-- [ ] ~~inherit global site-packages~~
-
-- [x] <ins>inherit global site-packages </ins>
 
 <img src="https://user-images.githubusercontent.com/79831881/252632360-d26b2d13-2139-4f7e-bf2b-1e1c00c650b8.png" width=50% height=50% border=5></img>
+
+### Be Sure to check the option:
+
+ **`inherit global site-packages`** :white_check_mark:
+
+
 
 
 If Python 3.11 does not appear as a base interpreter in the dropdown-menu, you can manually set the installationpath. For Windows-Users, the path can be found under:
@@ -82,7 +79,7 @@ A New Configuration for the project is created by clicking the button labeled `E
 
 Select Python as the debugger for the project.
 
-![select python](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/851ce815-0d78-4fa0-aa06-6e95459487a3)
+<a width="50%" height="50%"> ![select python](https://github.com/MauriceWagner224/Pygame-Platformer/assets/79831881/851ce815-0d78-4fa0-aa06-6e95459487a3)</a>
 
 In the textbox `Script Path`, select __init__.py from your projectfolder as initalization-script.
 
