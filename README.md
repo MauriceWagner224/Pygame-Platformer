@@ -59,7 +59,7 @@ And create a new virtuelenv as the environment and Python 3.11 for base interpre
 
 ### Be Sure to check the option:
 
-**inherit global site-packages** :white_check_mark:
+ **`inherit global site-packages`** :white_check_mark:
 
 
 
