@@ -57,7 +57,7 @@ And create a new virtuelenv as the environment and Python 3.11 for base interpre
 
 <img src="https://user-images.githubusercontent.com/79831881/252632360-d26b2d13-2139-4f7e-bf2b-1e1c00c650b8.png" width=50% height=50% border=5></img>
 
-<ins>Be Sure to check the option:</ins>
+### Be Sure to check the option:
 
 **inherit global site-packages** :white_check_mark:
 
